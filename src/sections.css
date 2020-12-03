@@ -1,0 +1,25 @@
+.sections-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.left-section {
+    width: 100%;
+    height: 100%;
+}
+
+.right-section {
+    max-width: 435px;
+    min-width: 435px;
+    width: 435px;
+    margin-right: 3px;
+    border-left: 1px solid #DFDFDF;
+    height: 100%;
+    overflow-y: auto;
+}
+.inner-right {
+    padding: 25px 50px;
+}

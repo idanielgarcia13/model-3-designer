@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'gotham-book';
+  src: url("./assets/fonts/gotham-book.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gotham-light';
+  src: url("./assets/fonts/gotham-light.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gotham-medium';
+  src: url("./assets/fonts/gotham-medium.otf") format("opentype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+  font-family: 'gotham-book';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* START | Model 3 Designer Navigator */
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-bottom: 1px solid #DFDFDF;
+  font-family: 'gotham-medium';
+}
+.logo {
+  width: 100px;
+  padding: 5px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIE1lZXQiIHdpZHRoPSIzNDIiIGhlaWdodD0iMzUiPjxwYXRoIGNsYXNzPSJ0ZHMtaWNvbi1maWxsLS1wcmltYXJ5IiBkPSJNMCAuMWE5LjcgOS43IDAgMDA3IDYuOTNoMTAuOTNsLjU2LjIydjI3LjU4aDYuODJWNy4yOWwuNjItLjIyaDEwLjk0YTkuODIgOS44MiAwIDAwNy02LjkzVi4wN0gwVi4xek0yMzguNjEuMDZoLTYuOHYzNC44NWgzMS4xNGE5LjY4IDkuNjggMCAwMDUuOTQtNi44NmgtMzAuM2wuMDItMjcuOTl6bS01Mi4zMyA2Ljg2YzMuNjItMSA2LjY2LTMuODIgNy4zOS02Ljg4bC0zOC4xLjA2djIwLjU1aDMxLjE3djcuMjNoLTI0LjQ2YTEzLjYgMTMuNiAwIDAwLTguNzEgN2gzOS44OVYxMy44MUgxNjIuM1Y2LjkyaDIzLjk4em0xMTYuMTcgMjcuOTdoNi43NlYyMC44N2gyNC41OHYxNC4wMmg2Ljc1VjEzLjg3bC0zOC4wOS0uMDR6TTg1LjM1IDdoMjZhOS41NyA5LjU3IDAgMDA3LjA1LTdINzguM2E5LjYxIDkuNjEgMCAwMDcuMDUgN3ptMCAxMy43N2gyNmE5LjU5IDkuNTkgMCAwMDcuMDUtN0g3OC4zYTkuNjMgOS42MyAwIDAwNy4wNSA3em0wIDE0LjE0aDI2YTkuNTkgOS41OSAwIDAwNy4wNS03SDc4LjNhOS42MiA5LjYyIDAgMDA3LjA1IDd6TTMwOC40NiA3LjAyaDI2YTkuNTggOS41OCAwIDAwNy4wNi03aC00MC4xMWE5LjU5IDkuNTkgMCAwMDcuMDUgN3oiLz48L3N2Zz4=);
+  opacity: 0.8;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navMenuItems {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.navMenuItems li {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-decoration: none;
+  min-width: 165px;
+  max-width: 225px;
+}
+.navMenuLink {
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+}
+.navMenuLinkACTIVE{
+  box-shadow: inset 0 -5px 0 -1px #007fff;
+  opacity: 1.0;
+}
+.locale-controller {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'gotham-medium';
+  font-size: 14px;
+  font-weight: 400;
+}
+/*   END | Model 3 Designer Navigator */
+
+.mainTopWrapper {
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  width: 100%;
+  height: 90px;
+  background-color: #333333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
 }
