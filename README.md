@@ -1,6 +1,6 @@
 # Tesla Model 3 Designer
 
-This project is an accurate replica of the [Tesla Model 3 Designer](https://www.tesla.com/model3/design). Built in React.
+This project is an accurate replica of the [Tesla Model 3 Designer](https://www.tesla.com/model3/design). Built in React. This rebuild is precise down to the colors, typography, and layout.
 
 ## Available Scripts
 
@@ -34,3 +34,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Copyright 2021 Daniel Garcia.

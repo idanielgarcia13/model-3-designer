@@ -11,10 +11,6 @@
   src: url("./assets/fonts/gotham-medium.otf") format("opentype");
 }
 
-div {
-  font-family: 'gotham-book';
-}
-
 html {
   margin: 0;
   height: 100%;
@@ -23,6 +19,7 @@ html {
 }
 body {
   height: 100%;
+  font-family: 'gotham-book';
 }
 
 /* START | Model 3 Designer Navigator */
@@ -90,4 +87,26 @@ nav {
   color: #fff;
   position: fixed;
   bottom: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+  padding-bottom: 8px;
+}
+
+h4 {
+  font-family: 'gotham-medium';
+  font-weight: 400;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 21px;;
 }

@@ -1,6 +1,6 @@
 .sections-wrapper {
     display: flex;
-    flex-direction: row;
+
     height: 100%;
     overflow: auto;
     position: relative;
@@ -22,4 +22,28 @@
 }
 .inner-right {
     padding: 25px 50px;
+}
+
+/* Car Section */
+.option {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 12px 20px;
+    border-radius: 35px;
+    line-height: 24px;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+}
+.optionSelected {
+    font-family: 'gotham-medium';
+    font-weight: 400;
+    box-shadow: 0 0 0 3px #007fff;
+    border: none;
+}
+.left-section, .car {
+    background-image: url('./assets/images/model3-white-standard.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
